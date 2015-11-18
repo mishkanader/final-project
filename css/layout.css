@@ -1,0 +1,35 @@
+body {
+  margin: 10px;
+}
+
+.page-header {
+  text-align: center;
+  border-bottom: 1px solid #777;
+  height: 25%;
+}
+
+.page-header h1, .page-header h2 {
+  letter-spacing: .5em;
+  font-family: Book Antiqua, times, serif;
+  margin: 0;
+}
+
+.page-header h2 {
+  font-size: 145%;
+  font-style: italic;
+}
+
+#bodyWrapper {
+  overflow: hidden;
+}
+
+#typesWrap {
+  overflow: hidden;
+}
+
+.blog-footer {
+  padding: 40px;
+  color: #999;
+  text-align: center;
+  height: 50px;
+}
