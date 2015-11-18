@@ -1,3 +1,16 @@
+/*how to keep the login stuff in the center of the page?*/
+.login {
+}
+.form-group {
+  text-align: justify;
+  width: 40%;
+}
+
+/* Trying to make the Login in the NavBar but on the right, perhaps a different color to be more eye-cathcing*/
+.loginNav {
+  text-align: right;
+}
+
 body {
   margin: 10px;
 }

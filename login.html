@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
-  <meta name="viwport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>ICS 415 - Final Project - Lauren Ogawa & Michele Takasato</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="finalstyle.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <title></title>
+  <!-- Custom styles for sticky-footer -->
+  <link href="css/sticky-footer.css" rel="stylesheet">
+
+  <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+
 </head>
-
 <body>
+<div class="container">
+  <div class="page-header">
 
-<div class="login">
-<FORM method="get" action="A06_2.html">
-  <p><label>Username:</label><INPUT type="text" name="name" size="30"></p>
+    <div class="page-header">
+      <h1>Permanent Addiction</h1>
+      <br>
 
-  <p><label>Password:</label><INPUT type="password" name="password" size="30"></p>
+      <h2>Caffeine Addicts!</h2>
+    </div>
 
-  <p>Reset button to clear form data:</p>
-  <INPUT type="reset">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-  <p>Submit button to send the form data:</p>
-  <INPUT type="submit">
-</FORM>
-</div>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Types of Caffeine</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li class="active" id="loginNav"><a href="">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<div class="page-footer" style="height: 50px">
-  Copyright (C) Lauren Ogawa and Michele Takasato
-</div>
+    <div class="container">
+      <div class="login">
+        <h3>Login</h3>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <form class="form-horizontal" name="simpleForm" action="process.html" method="get" id="simpleForm">
+
+          <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="text" class="form-control" name="password" id="password" placeholder="Password">
+          </div>
+
+          <input class="btn btn-default" type="reset" value="Reset">
+
+          <input class="btn btn-default" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+
+    <!-- blog-footer -->
+    <footer class="blog-footer">
+      <p>Webmasters: Copyright (C) <a href="mailto:logawa21@hawaii.edu" target="_blank">Lauren Ogawa</a> and <a
+          href="mailto:mtt@hawaii.edu" target="_blank">Michele Takasato</a>
+      </p>
+    </footer>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
