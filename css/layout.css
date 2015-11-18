@@ -33,3 +33,11 @@ body {
   text-align: center;
   height: 50px;
 }
+
+.blog-post p{
+  text-align: justify;
+}
+
+p {
+  font-size: medium;
+}
