@@ -6,6 +6,10 @@
   width: 40%;
 }
 
+.form {
+  align-content: center;
+}
+
 /* Trying to make the Login in the NavBar but on the right, perhaps a different color to be more eye-cathcing*/
 .loginNav {
 
