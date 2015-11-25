@@ -54,49 +54,124 @@
       </div>
     </nav>
 
+    <!--     <div class="container">
+          <div class="login">
+            <h3>Login</h3>
+
+            <form class="form-horizontal" name="simpleForm"
+                  action="verify.php" method="post" id="simpleForm">
+
+              <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+              <div class="form-group">
+                <label for="username">Username: </label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Username" maxlength="50">
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" maxlength="50">
+              </div>
+
+              <div class="btn-group">
+                <input class="btn btn-default" type="button" value="Guest">
+              </div>
+
+              <input class="btn btn-danger" type="reset" value="Reset">
+
+              <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>-->
+
     <div class="container">
-      <div class="login">
-        <h3>Login</h3>
-
-        <form class="form-horizontal" name="simpleForm"
-              action="verify.php" method="post" id="simpleForm">
-
-          <input type='hidden' name='submitted' id='submitted' value='1'/>
-
-          <div class="form-group">
-            <label for="username">Username: </label>
-            <input type="text" class="form-control" name="username" id="username" placeholder="Username" maxlength="50">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-login">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-6">
+                  <a href="#" class="active" id="login-form-link">Login</a>
+                </div>
+                <div class="col-xs-6">
+                  <a href="#" id="register-form-link">Register</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                    <div class="form-group">
+                      <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group text-center">
+                      <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                      <label for="remember"> Remember Me</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                          <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="text-center">
+                            <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <form id="register-form" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                    <div class="form-group">
+                      <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                          <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="password">Password: </label>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Password" maxlength="50">
-          </div>
-
-          <div class="btn-group">
-            <input class="btn btn-default" type="button" value="Guest">
-          </div>
-
-          <input class="btn btn-danger" type="reset" value="Reset">
-
-          <input class="btn btn-primary" type="submit" value="Submit">
-        </form>
+        </div>
       </div>
     </div>
 
+  <!-- blog-footer -->
+  <footer class="blog-footer">
+    <p>Webmasters: Copyright (C) <a href="mailto:logawa21@hawaii.edu" target="_blank">Lauren Ogawa</a> and <a
+        href="mailto:mtt@hawaii.edu" target="_blank">Michele Takasato</a>
+    </p>
+  </footer>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-    <!-- blog-footer -->
-    <footer class="blog-footer">
-      <p>Webmasters: Copyright (C) <a href="mailto:logawa21@hawaii.edu" target="_blank">Lauren Ogawa</a> and <a
-          href="mailto:mtt@hawaii.edu" target="_blank">Michele Takasato</a>
-      </p>
-    </footer>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
 
 </body>
 </html>
