@@ -40,6 +40,10 @@ body {
   height: 50px;
 }
 
+.blog-post {
+  margin-bottom: 60px;
+}
+
 .blog-post p{
   text-align: justify;
 }
@@ -48,6 +52,9 @@ p {
   font-size: medium;
 }
 
+.blog-post h3 {
+  border-bottom: 1px solid #777;
+}
 
 /* Login Page */
 
