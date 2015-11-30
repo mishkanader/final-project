@@ -28,12 +28,15 @@
 // SQL query to fetch information of registerd users and finds user match.
         $query = mysql_query("select * from login where password='$password' AND username='$username'", $connection);
         $rows = mysql_num_rows($query);
-        if ($query == TRUE) {
+        if ($query == TRUE && $username != "") {
             $_SESSION['login_user']=$username; // Initializing Session
+                $_SESSION['logged_in']=TRUE;
                echo 'Logged in successfully.';
+                print "<h1>" . "Welcome, $username !!!" . "</h1>";
                 header("Refresh: 3; url=about.html");// Redirecting To Other Page
         } else {
-            $error = "Username or Password is invalid";
+                print "<h1>" . "Error: redirecting to login page..." . "</h1>";
+                header("Refresh: 3; url=login.html");
         }
         mysql_close($connection); // Closing Connection
 
