@@ -15,7 +15,9 @@
         $username=$_POST['username'];
         $password=$_POST['password'];
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-        $connection = mysql_connect("localhost", "root", "cruelangel");
+//
+//        $connection = mysql_connect("localhost", "root", "cruelangel");
+        $connection = mysql_connect("localhost", "root", "");
 // To protect MySQL injection for Security purpose
         $username = stripslashes($username);
         $password = stripslashes($password);
@@ -28,7 +30,8 @@
         $rows = mysql_num_rows($query);
         if ($query == TRUE) {
             $_SESSION['login_user']=$username; // Initializing Session
-            header("location: about.html"); // Redirecting To Other Page
+               echo 'Logged in successfully.';
+                header("Refresh: 3; url=about.html");// Redirecting To Other Page
         } else {
             $error = "Username or Password is invalid";
         }
