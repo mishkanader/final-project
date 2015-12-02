@@ -1,23 +1,12 @@
 <?php
-//session_start(); // Starting Session
-//$error=''; // Variable To Store Error Message
-//if (isset($_POST['submit'])) {
-//    if (empty($_POST['username']) || empty($_POST['password'])) {
-//        $error = "Username or Password is invalid";
- //   }
- //   else
-  //  {
-
-//Everything connects, but i cant get the sql to check if the user is valid
-//correctly.  it goes strait to the page without error checking.
 
 // Define $username and $password
         $username=$_POST['username'];
         $password=$_POST['password'];
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
 //
-//        $connection = mysql_connect("localhost", "root", "cruelangel");
-        $connection = mysql_connect("localhost", "root", "");
+//        $connection = mysql_connect("localhost", "root", "cruelangel", "derpderp");
+        $connection = mysql_connect("localhost", "root", "", "derpderp");
 // To protect MySQL injection for Security purpose
         $username = stripslashes($username);
         $password = stripslashes($password);
@@ -31,12 +20,12 @@
         if ($query == TRUE && $username != "") {
             $_SESSION['login_user']=$username; // Initializing Session
                 $_SESSION['logged_in']=TRUE;
-               echo 'Logged in successfully.';
-                print "<h1>" . "Welcome, $username !!!" . "</h1>";
                 header("Refresh: 3; url=about.html");// Redirecting To Other Page
+                echo 'Logged in successfully.';
+                print "<h1>" . "Welcome, $username !!!" . "</h1>";
         } else {
-                print "<h1>" . "Error: redirecting to login page..." . "</h1>";
                 header("Refresh: 3; url=login.html");
+                print "<h1>" . "Error: redirecting to login page..." . "</h1>";
         }
         mysql_close($connection); // Closing Connection
 
